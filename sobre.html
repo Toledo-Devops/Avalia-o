@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre Nós | Avalição DevOps</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+          "Helvetica Neue", sans-serif;
+      }
+
+      :root {
+        --bg-color: #f5f5f7;
+        --primary-color: #2c3e50;
+        --secondary-color: #34495e;
+        --accent-color: #3498db;
+        --text-color: #333;
+        --light-text: #7f8c8d;
+      }
+
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        background-image: linear-gradient(
+          135deg,
+          rgba(245, 245, 247, 0.9) 0%,
+          rgba(220, 220, 225, 0.9) 100%
+        );
+      }
+
+      .container {
+        max-width: 800px;
+        width: 100%;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        padding: 3rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 6px;
+        background: linear-gradient(
+          90deg,
+          var(--accent-color),
+          var(--primary-color)
+        );
+      }
+
+      h1 {
+        color: var(--primary-color);
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+      }
+
+      p.subtitle {
+        color: var(--light-text);
+        font-size: 1.1rem;
+        margin-bottom: 2.5rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .about-text {
+        text-align: left;
+        margin: 2rem 0;
+        color: var(--text-color);
+      }
+
+      .about-text p {
+        margin-bottom: 1.5rem;
+      }
+
+      .back-button {
+        display: inline-block;
+        background: var(--primary-color);
+        color: white;
+        padding: 0.8rem 2rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        border: none;
+        cursor: pointer;
+        margin-top: 1.5rem;
+        box-shadow: 0 4px 15px rgba(44, 62, 80, 0.3);
+      }
+
+      .back-button:hover {
+        background: var(--secondary-color);
+        transform: translateY(-2px);
+      }
+
+      footer {
+        margin-top: 3rem;
+        color: var(--light-text);
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 2rem 1.5rem;
+        }
+        h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sobre a Avalição DevOps</h1>
+      <p class="subtitle">
+        Transformando ideias em infraestrutura escalável e eficiente
+      </p>
+
+      <div class="about-text">
+        <p>
+          Fundada em 2025, a <strong>Avalição DevOps</strong> é especializada em
+          soluções de integração e entrega contínua (CI/CD), automação de
+          infraestrutura e monitoramento de sistemas. Nossa missão é acelerar a
+          entrega de software com qualidade, segurança e eficiência.
+        </p>
+
+        <p>
+          Com uma equipe de engenheiros certificados em ferramentas como
+          <strong>Docker, Kubernetes, Terraform e AWS</strong>, ajudamos
+          empresas a adotarem práticas DevOps de forma estratégica, reduzindo
+          custos operacionais e aumentando a disponibilidade de sistemas.
+        </p>
+
+        <p>Oferecemos:</p>
+        <ul
+          style="
+            text-align: left;
+            margin-left: 2rem;
+            color: var(--secondary-color);
+          "
+        >
+          <li>Consultoria em Cultura DevOps</li>
+          <li>Implantação de Pipelines CI/CD</li>
+          <li>Infraestrutura como Código (IaC)</li>
+          <li>Monitoramento e Observabilidade</li>
+        </ul>
+      </div>
+
+      <a href="Avaliacao_devops.html" class="back-button"
+        >Voltar à Página Inicial</a
+      >
+    </div>
+    <footer>© 2025 Avalição DevOps. Todos os direitos reservados.</footer>
+  </body>
+</html>
